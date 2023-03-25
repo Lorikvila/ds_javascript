@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validation()">
+        <div class="name-conatiner">
+            <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <span id="name_error">Please enter valid name</span><br>
+        </div>
+        <div class="age-conatiner">
+            <label for="age">Age</label>
+        <input type="text" name="age" id="age">
+        <span id="age_error">Please enter valid name</span><br>
+        
+        </div>
+
+        <br>
+
+        <div class="city-container">
+            <label id="city_label" for="city">City:</label>
+            <select name="city" id="city">
+                <option value="" selected></option>
+                <option value="Prishtine" selected>Prishtine</option>
+                <option value="Prizren" selected>Prizren</option>
+                <option value="Gjilan" selected>Gjilan</option>
+                <option value="Ferizaj" selected>Ferizaj</option>
+            </select>
+            <span id="city_error">Please Select A City</span>
+        </div>
+
+        <br>
+
+        <div class="phone_number">
+            <label id="phone_label" for="phone_number">Phone:</label>
+            <input type="text" name="phone_number" id="phone_number">
+            <span id="phone_error">Please enter correct phone number</span>
+        </div>
+
+        <br>
+
+        <div class="password">
+            <label id="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <span id="password_error">Please enter correct password</span>
+        </div>
+        <br>
+
+        <div class="email">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email">
+            <span id="email_error">Please type correct email adress</span>
+        </div>
+        <br>
+        <button type="submit" name="submit">Send</button>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
